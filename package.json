@@ -1,0 +1,20 @@
+{
+  "name": "easy-style",
+  "version": "1.0.0",
+  "description": "A convenient wrapper around free-style",
+  "keywords": ["free-style","css"],
+  "browser": "browser.js",
+  "main": "node.js",
+  "dependencies": {
+    "free-style": "1"
+  },
+  "devDependencies": {
+    "serve": "jkroso/serve",
+    "mana": "jkroso/mana"
+  },
+  "transpile": [["example.html*", "!sourcegraph/babel->js", {"stage": 0}]],
+  "repository": "git://github.com/jkroso/easy-style.git",
+  "author": "Jake Rosoman",
+  "files": ["browser.js", "node.js"],
+  "license": "MIT"
+}

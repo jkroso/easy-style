@@ -1,0 +1,40 @@
+<title>easy-style</title>
+<script type="text/javascript">
+  import {style} from './browser'
+  import {JSX} from 'mana'
+
+  const container = style({
+    flexWrap: 'wrap',
+    padding: '50px',
+    display: 'flex',
+    '@media (max-width: 500px)': {
+      padding: '5px',
+      background: 'lightgreen'
+    }
+  })
+
+  const box = style({
+    width: '400px',
+    height: '50px',
+    margin: '10px',
+    border: '1px solid grey',
+    borderRadius: '2px',
+    flexShrink: 0,
+    '@media (max-width: 500px)': {
+      width: '200px',
+      margin: '5px',
+      background: 'red'
+    }
+  })
+
+  const ui = <div class={container}>
+    <div class={box}></div>
+    <div class={box}></div>
+    <div class={box}></div>
+    <div class={box}></div>
+    <div class={box}></div>
+    <div class={box}></div>
+  </div>
+
+  window.onload = () => ui.mount(document.body)
+</script>
