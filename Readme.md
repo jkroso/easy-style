@@ -20,7 +20,7 @@ Calls `freeStyle.registerStyle`. Returns a className.
 
 ### `rule(query, object)`
 
-Calls `freeStyle.registerRule`. Returns a className.
+Calls `freeStyle.registerRule`. Registers the rule with the page. Returns `void`.
 
 ### `keyframe(object)`
 
